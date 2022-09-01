@@ -1,0 +1,22 @@
+let N equal 8, then the difference ways to distribute N clips are:
+
+# in one box of size 8 add all the clips
+(1)(box) : (8)(boxes sizes)
+(2) : (4, 4)
+(3) : (3, 3, 2)
+(4) : (2, 2, 2, 2)
+(5) : (2, 2, 2, 1, 1)
+(6) : (2, 2, 1, 1, 1, 1)
+(7) : (2, 1, 1, 1, 1, 1, 1)
+(8) : (1, 1, 1, 1, 1, 1, 1, 1)
+
+Note that to distribute N clips in M boxes, the M boxes size could be at most 2 distinct consecutive integers.
+
+that's means you have N ways to distribute N clips boxes.
+
+Now for any L and R you need to find two numbers:
+	The first is the upper bound of L (l1)
+	The second is the lower bound of R (r2)
+The search constraint is [1, N] where any number on this interval represents the number of boxes you have to distribute N clips.
+
+Then the answer is (N - (l1-r2)).
