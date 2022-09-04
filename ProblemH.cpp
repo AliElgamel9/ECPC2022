@@ -6,7 +6,8 @@
 using namespace std;
 
 /*
-    Time Complexity O(N) = (2^N)*(2^N)+4^(log2(n)-2)*2
+    Time Complexity O(N) = 4^N + (4^(N-2))*2
+        OR O(N) = 2 * 4^N
     Space Complexity O(N) = (2^8)*(2^8)+1
 */
 
